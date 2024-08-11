@@ -11,6 +11,21 @@ importers:
       '@finsweet/ts-utils':
         specifier: ^0.40.0
         version: 0.40.0
+      '@splinetool/loader':
+        specifier: ^1.9.6
+        version: 1.9.6(three@0.149.0)
+      '@splinetool/runtime':
+        specifier: ^1.9.5
+        version: 1.9.5
+      gsap:
+        specifier: ^3.12.5
+        version: 3.12.5
+      lenis:
+        specifier: ^1.1.9
+        version: 1.1.9
+      three:
+        specifier: 0.149.0
+        version: 0.149.0
     devDependencies:
       '@changesets/changelog-git':
         specifier: ^0.2.0
@@ -20,7 +35,7 @@ importers:
         version: 2.27.1
       '@finsweet/eslint-config':
         specifier: ^2.0.7
-        version: 2.0.7(@typescript-eslint/eslint-plugin@7.1.1)(@typescript-eslint/parser@7.1.1)(eslint-config-prettier@9.1.0)(eslint-plugin-prettier@5.1.3)(eslint-plugin-simple-import-sort@12.0.0)(eslint@8.57.0)(prettier@3.2.5)(typescript@5.3.3)
+        version: 2.0.7(@typescript-eslint/eslint-plugin@7.1.1(@typescript-eslint/parser@7.1.1(eslint@8.57.0)(typescript@5.3.3))(eslint@8.57.0)(typescript@5.3.3))(@typescript-eslint/parser@7.1.1(eslint@8.57.0)(typescript@5.3.3))(eslint-config-prettier@9.1.0(eslint@8.57.0))(eslint-plugin-prettier@5.1.3(eslint-config-prettier@9.1.0(eslint@8.57.0))(eslint@8.57.0)(prettier@3.2.5))(eslint-plugin-simple-import-sort@12.0.0(eslint@8.57.0))(eslint@8.57.0)(prettier@3.2.5)(typescript@5.3.3)
       '@finsweet/tsconfig':
         specifier: ^1.3.4
         version: 1.3.4(typescript@5.3.3)
@@ -29,7 +44,7 @@ importers:
         version: 1.42.1
       '@typescript-eslint/eslint-plugin':
         specifier: ^7.1.1
-        version: 7.1.1(@typescript-eslint/parser@7.1.1)(eslint@8.57.0)(typescript@5.3.3)
+        version: 7.1.1(@typescript-eslint/parser@7.1.1(eslint@8.57.0)(typescript@5.3.3))(eslint@8.57.0)(typescript@5.3.3)
       '@typescript-eslint/parser':
         specifier: ^7.1.1
         version: 7.1.1(eslint@8.57.0)(typescript@5.3.3)
@@ -47,7 +62,7 @@ importers:
         version: 9.1.0(eslint@8.57.0)
       eslint-plugin-prettier:
         specifier: ^5.1.3
-        version: 5.1.3(eslint-config-prettier@9.1.0)(eslint@8.57.0)(prettier@3.2.5)
+        version: 5.1.3(eslint-config-prettier@9.1.0(eslint@8.57.0))(eslint@8.57.0)(prettier@3.2.5)
       eslint-plugin-simple-import-sort:
         specifier: ^12.0.0
         version: 12.0.0(eslint@8.57.0)
@@ -131,6 +146,9 @@ packages:
 
   '@changesets/write@0.3.0':
     resolution: {integrity: sha512-slGLb21fxZVUYbyea+94uFiD6ntQW0M2hIKNznFizDhZPDgn2c/fv1UzzlW43RVzh1BEDuIqW6hzlJ1OflNmcw==}
+
+  '@darkroom.engineering/tempus@0.0.46':
+    resolution: {integrity: sha512-s5vav3KMHYezvUCl4ee5epg0oimF6M8C9gAaKxFnFaTvX2q3ywFDryIv6XLd0mRFUt3S1uHDJqKaiEcs2ZVSvw==}
 
   '@esbuild/aix-ppc64@0.20.1':
     resolution: {integrity: sha512-m55cpeupQ2DbuRGQMMZDzbv9J9PgVelPjlcmM5kxHnrBdBx6REaEd7LamYV7Dm8N7rCyR/XwU6rVP8ploKtIkA==}
@@ -345,6 +363,14 @@ packages:
     resolution: {integrity: sha512-Gq9rmS54mjBL/7/MvBaNOBwbfnh7beHvS6oS4srqXFcQHpQCV1+c8JXWE8VLPyRDhgS3H8x8A7hztqI9VnwrAQ==}
     engines: {node: '>=16'}
     hasBin: true
+
+  '@splinetool/loader@1.9.6':
+    resolution: {integrity: sha512-mwBrfgk4n0P56w7nsqHTLkkYMLCehGYelloFOAyZ9ZO3mkhx9ugjP61nEtimQ8mNjStihgKWcJfRoQpxXOtLpg==}
+    peerDependencies:
+      three: '>=0.133.0'
+
+  '@splinetool/runtime@1.9.5':
+    resolution: {integrity: sha512-1XZt5ozj8O8KVbLfs+pRRc3Ul4smSOF2x1LRDVJUI9pneU4l8LanAHeXG+kBOClpK1LBlmJoh7DBK0vvG3sokg==}
 
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
@@ -868,6 +894,9 @@ packages:
   graphemer@1.4.0:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
 
+  gsap@3.12.5:
+    resolution: {integrity: sha512-srBfnk4n+Oe/ZnMIOXt3gT605BX9x5+rh/prT2F1SsNJsU1XuMiP0E2aptW481OnonOGACZWBqseH5Z7csHxhQ==}
+
   hard-rejection@2.1.0:
     resolution: {integrity: sha512-VIZB+ibDhx7ObhAe7OVtoEbuP4h/MuOTHJ+J8h/eBXotJYl0fBgR72xDFCKgIh22OJZIOVNxBMWuhAr10r8HdA==}
     engines: {node: '>=6'}
@@ -1069,6 +1098,17 @@ packages:
     resolution: {integrity: sha512-o+NO+8WrRiQEE4/7nwRJhN1HWpVmJm511pBHUxPLtp0BUISzlBplORYSmTclCnJvQq2tKu/sgl3xVpkc7ZWuQQ==}
     engines: {node: '>=6'}
 
+  lenis@1.1.9:
+    resolution: {integrity: sha512-xU2UU1J8mJCiWBSfiMWsC/kPbQMIadSsJiEu3mVqptXGnwo/FUnfp8xCyiOJEvBwzqx4XDdB6TKYFn83y871vA==}
+    peerDependencies:
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
+    peerDependenciesMeta:
+      react:
+        optional: true
+      react-dom:
+        optional: true
+
   levn@0.4.1:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}
     engines: {node: '>= 0.8.0'}
@@ -1159,6 +1199,10 @@ packages:
   object.assign@4.1.5:
     resolution: {integrity: sha512-byy+U7gp+FVwmyzKPYhW2h5l3crpmGsxl7X2s8y43IgxvG4g3QZ6CffDtsNQy1WsmZpQbO+ybo0AlW7TY6DcBQ==}
     engines: {node: '>= 0.4'}
+
+  on-change@4.0.2:
+    resolution: {integrity: sha512-cMtCyuJmTx/bg2HCpHo3ZLeF7FZnBOapLqZHr2AlLeJ5Ul0Zu2mUJJz051Fdwu/Et2YW04ZD+TtU+gVy0ACNCA==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
   once@1.4.0:
     resolution: {integrity: sha512-lNaJgI+2Q5URQBkccEKHTQOPaXdUxnZZElQTZY0MFUAuaEqe1E+Nyvgdz/aIyNi6Z9MzO5dv1H8n58/GELp3+w==}
@@ -1355,6 +1399,9 @@ packages:
   safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
+  semver-compare@1.0.0:
+    resolution: {integrity: sha512-YM3/ITh2MJ5MtzaM429anh+x2jiLVjqILF4m4oyQB18W7Ggea7BfqdH/wGMK7dDiMghv/6WG7znWMwUDzJiXow==}
+
   semver@5.7.2:
     resolution: {integrity: sha512-cBznnQ9KjJqU67B52RMC65CMarK2600WFnbkcaiwWq3xy/5haFJlshgnpjovMVJ+Hff49d8GEn0b87C5pDQ10g==}
     hasBin: true
@@ -1480,6 +1527,9 @@ packages:
 
   text-table@0.2.0:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
+
+  three@0.149.0:
+    resolution: {integrity: sha512-tohpUxPDht0qExRLDTM8sjRLc5d9STURNrdnK3w9A+V4pxaTBfKWWT/IqtiLfg23Vfc3Z+ImNfvRw1/0CtxrkQ==}
 
   tmp@0.0.33:
     resolution: {integrity: sha512-jRCJlojKnZ3addtTOjdIqoRuPEKBvNXcGYqzO6zWZX8KfKEpnGY5jfggJQ3EjKuu8D4bJRr0y+cYJFmYbImXGw==}
@@ -1800,6 +1850,8 @@ snapshots:
       human-id: 1.0.2
       prettier: 2.8.8
 
+  '@darkroom.engineering/tempus@0.0.46': {}
+
   '@esbuild/aix-ppc64@0.20.1':
     optional: true
 
@@ -1892,13 +1944,13 @@ snapshots:
 
   '@eslint/js@8.57.0': {}
 
-  '@finsweet/eslint-config@2.0.7(@typescript-eslint/eslint-plugin@7.1.1)(@typescript-eslint/parser@7.1.1)(eslint-config-prettier@9.1.0)(eslint-plugin-prettier@5.1.3)(eslint-plugin-simple-import-sort@12.0.0)(eslint@8.57.0)(prettier@3.2.5)(typescript@5.3.3)':
+  '@finsweet/eslint-config@2.0.7(@typescript-eslint/eslint-plugin@7.1.1(@typescript-eslint/parser@7.1.1(eslint@8.57.0)(typescript@5.3.3))(eslint@8.57.0)(typescript@5.3.3))(@typescript-eslint/parser@7.1.1(eslint@8.57.0)(typescript@5.3.3))(eslint-config-prettier@9.1.0(eslint@8.57.0))(eslint-plugin-prettier@5.1.3(eslint-config-prettier@9.1.0(eslint@8.57.0))(eslint@8.57.0)(prettier@3.2.5))(eslint-plugin-simple-import-sort@12.0.0(eslint@8.57.0))(eslint@8.57.0)(prettier@3.2.5)(typescript@5.3.3)':
     dependencies:
-      '@typescript-eslint/eslint-plugin': 7.1.1(@typescript-eslint/parser@7.1.1)(eslint@8.57.0)(typescript@5.3.3)
+      '@typescript-eslint/eslint-plugin': 7.1.1(@typescript-eslint/parser@7.1.1(eslint@8.57.0)(typescript@5.3.3))(eslint@8.57.0)(typescript@5.3.3)
       '@typescript-eslint/parser': 7.1.1(eslint@8.57.0)(typescript@5.3.3)
       eslint: 8.57.0
       eslint-config-prettier: 9.1.0(eslint@8.57.0)
-      eslint-plugin-prettier: 5.1.3(eslint-config-prettier@9.1.0)(eslint@8.57.0)(prettier@3.2.5)
+      eslint-plugin-prettier: 5.1.3(eslint-config-prettier@9.1.0(eslint@8.57.0))(eslint@8.57.0)(prettier@3.2.5)
       eslint-plugin-simple-import-sort: 12.0.0(eslint@8.57.0)
       prettier: 3.2.5
       typescript: 5.3.3
@@ -1955,6 +2007,16 @@ snapshots:
     dependencies:
       playwright: 1.42.1
 
+  '@splinetool/loader@1.9.6(three@0.149.0)':
+    dependencies:
+      semver-compare: 1.0.0
+      three: 0.149.0
+
+  '@splinetool/runtime@1.9.5':
+    dependencies:
+      on-change: 4.0.2
+      semver-compare: 1.0.0
+
   '@types/json-schema@7.0.15': {}
 
   '@types/minimist@1.2.5': {}
@@ -1965,7 +2027,7 @@ snapshots:
 
   '@types/semver@7.5.8': {}
 
-  '@typescript-eslint/eslint-plugin@7.1.1(@typescript-eslint/parser@7.1.1)(eslint@8.57.0)(typescript@5.3.3)':
+  '@typescript-eslint/eslint-plugin@7.1.1(@typescript-eslint/parser@7.1.1(eslint@8.57.0)(typescript@5.3.3))(eslint@8.57.0)(typescript@5.3.3)':
     dependencies:
       '@eslint-community/regexpp': 4.10.0
       '@typescript-eslint/parser': 7.1.1(eslint@8.57.0)(typescript@5.3.3)
@@ -1980,6 +2042,7 @@ snapshots:
       natural-compare: 1.4.0
       semver: 7.6.0
       ts-api-utils: 1.2.1(typescript@5.3.3)
+    optionalDependencies:
       typescript: 5.3.3
     transitivePeerDependencies:
       - supports-color
@@ -1992,6 +2055,7 @@ snapshots:
       '@typescript-eslint/visitor-keys': 7.1.1
       debug: 4.3.4
       eslint: 8.57.0
+    optionalDependencies:
       typescript: 5.3.3
     transitivePeerDependencies:
       - supports-color
@@ -2008,6 +2072,7 @@ snapshots:
       debug: 4.3.4
       eslint: 8.57.0
       ts-api-utils: 1.2.1(typescript@5.3.3)
+    optionalDependencies:
       typescript: 5.3.3
     transitivePeerDependencies:
       - supports-color
@@ -2024,6 +2089,7 @@ snapshots:
       minimatch: 9.0.3
       semver: 7.6.0
       ts-api-utils: 1.2.1(typescript@5.3.3)
+    optionalDependencies:
       typescript: 5.3.3
     transitivePeerDependencies:
       - supports-color
@@ -2376,13 +2442,14 @@ snapshots:
     dependencies:
       eslint: 8.57.0
 
-  eslint-plugin-prettier@5.1.3(eslint-config-prettier@9.1.0)(eslint@8.57.0)(prettier@3.2.5):
+  eslint-plugin-prettier@5.1.3(eslint-config-prettier@9.1.0(eslint@8.57.0))(eslint@8.57.0)(prettier@3.2.5):
     dependencies:
       eslint: 8.57.0
-      eslint-config-prettier: 9.1.0(eslint@8.57.0)
       prettier: 3.2.5
       prettier-linter-helpers: 1.0.0
       synckit: 0.8.8
+    optionalDependencies:
+      eslint-config-prettier: 9.1.0(eslint@8.57.0)
 
   eslint-plugin-simple-import-sort@12.0.0(eslint@8.57.0):
     dependencies:
@@ -2609,6 +2676,8 @@ snapshots:
 
   graphemer@1.4.0: {}
 
+  gsap@3.12.5: {}
+
   hard-rejection@2.1.0: {}
 
   has-bigints@1.0.2: {}
@@ -2777,6 +2846,10 @@ snapshots:
 
   kleur@4.1.5: {}
 
+  lenis@1.1.9:
+    dependencies:
+      '@darkroom.engineering/tempus': 0.0.46
+
   levn@0.4.1:
     dependencies:
       prelude-ls: 1.2.1
@@ -2876,6 +2949,8 @@ snapshots:
       define-properties: 1.2.1
       has-symbols: 1.0.3
       object-keys: 1.1.1
+
+  on-change@4.0.2: {}
 
   once@1.4.0:
     dependencies:
@@ -3055,6 +3130,8 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
+  semver-compare@1.0.0: {}
+
   semver@5.7.2: {}
 
   semver@7.6.0:
@@ -3190,6 +3267,8 @@ snapshots:
   term-size@2.2.1: {}
 
   text-table@0.2.0: {}
+
+  three@0.149.0: {}
 
   tmp@0.0.33:
     dependencies:
