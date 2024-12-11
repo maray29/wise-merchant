@@ -5,7 +5,9 @@
     "baseUrl": "./",
     "paths": {
       "$utils/*": ["src/utils/*"],
-      "$animation/*": ["src/animation/*"]
+      "$animation/*": ["src/animation/*"],
+      "$sliders/*": ["src/sliders/*"],
+      "$form/*": ["src/form/*"]
     },
     "types": ["@finsweet/ts-utils"]
   }

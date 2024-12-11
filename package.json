@@ -1,20 +1,20 @@
 {
-  "name": "@finsweet/developer-starter",
+  "name": "@maray-ai/wise-merchant",
   "version": "0.0.0",
-  "description": "Developer starter template for Finsweet projects.",
-  "homepage": "https://github.com/finsweet/developer-starter#readme",
+  "description": "Codebase for Wise Merchant project.",
+  "homepage": "https://github.com/maray29/wise-merchant#readme",
   "license": "ISC",
   "keywords": [],
   "author": {
-    "name": "Finsweet",
-    "url": "https://finsweet.com/"
+    "name": "Maray",
+    "url": "https://maray.ai"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/finsweet/developer-starter.git"
+    "url": "git+https://github.com/maray29/wise-merchant.git"
   },
   "bugs": {
-    "url": "https://github.com/finsweet/developer-starter/issues"
+    "url": "https://github.com/maray29/wise-merchant/issues"
   },
   "type": "module",
   "main": "src/index.ts",
@@ -53,10 +53,12 @@
   },
   "dependencies": {
     "@finsweet/ts-utils": "^0.40.0",
-    "@splinetool/loader": "^1.9.6",
+    "@splinetool/loader": "^1.9.41",
     "@splinetool/runtime": "^1.9.5",
     "gsap": "^3.12.5",
     "lenis": "^1.1.9",
+    "split-type": "^0.3.4",
+    "swiper": "^11.1.9",
     "three": "0.149.0"
   },
   "engines": {

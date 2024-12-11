@@ -1,32 +1,28 @@
 import SplineLoader from '@splinetool/loader';
 import gsap from 'gsap';
 import * as THREE from 'three';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
 import {
   animateFAQ,
   animateHeaderHeading,
   animateIconDivider,
-  animateNav,
   animatePinnedSection,
   animateProcessTabs,
 } from '$animation/animation.js';
-import { waitForHcaptchaAndRun } from '$form/form.js';
-import { createProjectsSlider, createTestimonialsSlider } from '$sliders/sliders.js';
+import { createPackagingProjectsSlider } from '$sliders/sliders.js';
 import scroll from '$utils/scroll.js';
 
 window.addEventListener('DOMContentLoaded', () => {
   let lenis;
   lenis = scroll();
 
-  animateNav();
   animateHeaderHeading();
+  createPackagingProjectsSlider();
   animatePinnedSection();
-  createProjectsSlider();
-  createTestimonialsSlider();
+  animateIconDivider();
   animateProcessTabs();
   animateFAQ();
-  waitForHcaptchaAndRun();
-  animateIconDivider();
 });
 
 // scene
