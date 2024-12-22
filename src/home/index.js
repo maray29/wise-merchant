@@ -6,15 +6,16 @@ import {
   animatePinnedSection,
   animateProcessTabs,
 } from '$animation/animation.js';
-import { waitForHcaptchaAndRun } from '$form/form.js';
 import {
   createPackagingTabsSlider,
   createProjectsSlider,
   createTestimonialsSlider,
 } from '$sliders/sliders.js';
 import scroll from '$utils/scroll.js';
+import { setHeroHeight } from '$utils/utils.js';
 
 window.addEventListener('DOMContentLoaded', () => {
+  setHeroHeight();
   animateNav();
   animateHeaderHeading();
   animatePinnedSection();
@@ -23,7 +24,6 @@ window.addEventListener('DOMContentLoaded', () => {
   createPackagingTabsSlider();
   animateProcessTabs();
   animateFAQ();
-  waitForHcaptchaAndRun();
   animateIconDivider();
 
   let lenis;

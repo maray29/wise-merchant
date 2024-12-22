@@ -184,6 +184,13 @@ export function createPackagingTabsSlider() {
         prevEl: sliderBtnPrev,
         nextEl: sliderBtnNext,
       },
+      breakpoints: {
+        0: { slidesPerView: 2, slidesPerGroup: 1, spaceBetween: 8 },
+        480: { slidesPerView: 2, slidesPerGroup: 1, spaceBetween: 12 },
+        767: { slidesPerView: 3, slidesPerGroup: 1, spaceBetween: 12 },
+        992: { slidesPerGroup: 4 },
+        1440: { slidesPerView: 5, slidesPerGroup: 1, spaceBetween: 12 },
+      },
     });
 
     if (index !== 0) {
@@ -217,19 +224,13 @@ export function createPackagingTabsSlider() {
 
 export function createLogoSlider() {
   const logoSlider = document.querySelector('[data-element="logo-slider"]');
-  console.log('Logo slider element:', logoSlider);
-  console.log('Logo slider element type:', logoSlider?.constructor?.name);
 
   if (!logoSlider) {
-    console.warn('Logo slider element not found');
     return;
   }
 
   const sliderBtnPrev = logoSlider.parentElement.querySelector('[data-element="swiper-prev"]');
   const sliderBtnNext = logoSlider.parentElement.querySelector('[data-element="swiper-next"]');
-
-  console.log('Previous button:', sliderBtnPrev);
-  console.log('Next button:', sliderBtnNext);
 
   const swiper = new Swiper(logoSlider, {
     modules: [Navigation],
@@ -249,6 +250,10 @@ export function createLogoSlider() {
     navigation: {
       prevEl: sliderBtnPrev,
       nextEl: sliderBtnNext,
+    },
+    breakpoints: {
+      0: { slidesPerView: 1, slidesPerGroup: 1, spaceBetween: 16 },
+      480: { slidesPerView: 2, slidesPerGroup: 1, spaceBetween: 12 },
     },
   });
 }
