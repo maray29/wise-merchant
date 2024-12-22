@@ -7,6 +7,18 @@ jobs:
   Lint:
     uses: finsweet/workflow-ci-lint/.github/workflows/lint.yml@main
 
-  # Comment this job out if your project doesn't have any tests
   Tests:
     uses: finsweet/workflow-ci-test/.github/workflows/test.yml@main
+
+  automerge:
+    needs: [Lint, Tests] # This ensures auto-merge only runs after other checks pass
+    runs-on: ubuntu-latest
+    if: github.actor == 'maray29' # Replace with your GitHub username
+    permissions:
+      pull-requests: write
+      contents: write
+    steps:
+      - name: Auto-merge PR
+        run: gh pr merge --auto --merge "${{ github.event.pull_request.html_url }}"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
