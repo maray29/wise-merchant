@@ -1,5 +1,11 @@
 # @maray-ai/wise-merchant
 
+## 0.2.2
+
+### Patch Changes
+
+- 1e87c58: Auto merge test
+
 ## 0.2.1
 
 ### Patch Changes
