@@ -12,11 +12,13 @@ import {
   createTestimonialsSlider,
 } from '$sliders/sliders.js';
 import scroll from '$utils/scroll.js';
+import { setHeroHeight } from '$utils/utils.js';
 
 window.addEventListener('DOMContentLoaded', () => {
   let lenis;
   lenis = scroll();
 
+  setHeroHeight();
   animateNav();
   animateHeaderHeading();
   createProjectsSlider();
