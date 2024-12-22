@@ -1,5 +1,11 @@
 # @maray-ai/wise-merchant
 
+## 0.2.0
+
+### Minor Changes
+
+- 6634f4d: Developed main custom features
+
 ## 0.1.1
 
 ### Patch Changes
