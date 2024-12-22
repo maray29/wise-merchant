@@ -266,6 +266,12 @@ export function animateFAQ() {
   ScrollTrigger.refresh();
 }
 
+export function animatePageIntro() {
+  gsap.to('.page-wrapper', {
+    autoAlpha: 1,
+  });
+}
+
 export function animateHeaderHeading() {
   const headerHeading = document.querySelector('[data-element="header-heading"]');
 
@@ -356,40 +362,6 @@ export function animateHeaderHeading() {
     },
     '<0.75'
   );
-
-  // headerHeadingLines.forEach((line) => {
-  //   const elements = line.children;
-
-  //   const text = new SplitType(line, { types: 'words' });
-
-  //   // Split heading into lines.
-  //   window.addEventListener('resize', () => {
-  //     if (window.outerWidth !== windowWidth) {
-  //       text.revert();
-  //       location.reload();
-  //     }
-  //     windowWidth = window.outerWidth;
-  //   });
-
-  //   tl.set(line.children, {
-  //     autoAlpha: 0,
-  //   });
-
-  //   tl.set(underlines, {
-  //     width: 0,
-  //   });
-
-  //   tl.from(
-  //     line.children,
-  //     {
-  //       yPercent: 100,
-  //       autoAlpha: 0,
-  //       stagger: 0.05,
-  //       duration: 0.75,
-  //     },
-  //     '<'
-  //   );
-  // });
 }
 
 export function animateNav() {
