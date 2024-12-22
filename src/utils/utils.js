@@ -1,12 +1,17 @@
-export function setHeroHeight() {
-  // Get the hero wrapper element
-  const heroWrapper = document.querySelector('[data-element="hero-wrapper"]');
+export function setHeroHeight(subtractNav = false) {
+  const element = document.querySelector('[data-element="hero-wrapper"]');
 
-  if (!heroWrapper) return;
+  if (!element) return;
 
-  // Calculate the window height
-  const windowHeight = window.innerHeight;
+  const vh = window.innerHeight;
 
-  // Set the height of the hero wrapper
-  heroWrapper.style.height = `${windowHeight}px`;
+  let finalHeight = vh;
+
+  if (subtractNav) {
+    const navbar = document.querySelector('[data-element="nav"]');
+    const navHeight = navbar ? navbar.offsetHeight : 0;
+    finalHeight = finalHeight - navHeight;
+  }
+
+  element.style.height = `${finalHeight}px`;
 }

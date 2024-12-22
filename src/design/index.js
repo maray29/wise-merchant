@@ -18,7 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
   let lenis;
   lenis = scroll();
 
-  setHeroHeight();
+  setHeroHeight(true);
   animateNav();
   animateHeaderHeading();
   createProjectsSlider();
