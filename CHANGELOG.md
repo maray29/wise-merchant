@@ -1,5 +1,11 @@
 # @maray-ai/wise-merchant
 
+## 0.3.0
+
+### Minor Changes
+
+- 41e58e5: Product detail page
+
 ## 0.2.4
 
 ### Patch Changes
