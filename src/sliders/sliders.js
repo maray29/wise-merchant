@@ -257,3 +257,41 @@ export function createLogoSlider() {
     },
   });
 }
+
+export function createPackagingSlider() {
+  const packaginTypesSlider = document.querySelector('[data-element="packaging-type-slider"]');
+  const sliderBtnPrev = packaginTypesSlider.parentElement.querySelector(
+    '[data-element="swiper-prev"]'
+  );
+  const sliderBtnNext = packaginTypesSlider.parentElement.querySelector(
+    '[data-element="swiper-next"]'
+  );
+
+  if (!packaginTypesSlider) return;
+
+  const swiper = new Swiper(packaginTypesSlider, {
+    modules: [Navigation],
+    slidesPerView: '5',
+    spaceBetween: 12,
+    // loop: true,
+    rewind: true,
+    grabCursor: true,
+    // centeredSlides: true,
+    speed: 500,
+    a11y: {
+      prevSlideMessage: 'Previous slide',
+      nextSlideMessage: 'Next slide',
+    },
+    navigation: {
+      prevEl: sliderBtnPrev,
+      nextEl: sliderBtnNext,
+    },
+    breakpoints: {
+      0: { slidesPerView: 2, slidesPerGroup: 1, spaceBetween: 8 },
+      480: { slidesPerView: 2, slidesPerGroup: 1, spaceBetween: 12 },
+      767: { slidesPerView: 3, slidesPerGroup: 1, spaceBetween: 12 },
+      992: { slidesPerGroup: 4 },
+      1440: { slidesPerView: 5, slidesPerGroup: 1, spaceBetween: 12 },
+    },
+  });
+}

@@ -80,18 +80,24 @@ function createFormSubmissions() {
 
   // Initialize form handling
   const requestForm = document.querySelector('.request-form_form');
+  // Checkbox validation
+  const checkboxes = requestForm.querySelectorAll('#form-checkboxes input[type="checkbox"]');
+
+  console.log(checkboxes);
 
   if (!requestForm) {
     return;
   }
+
   requestForm.addEventListener('submit', (e) => {
-    if (areCheckboxesValid()) {
+    if (checkboxes.length > 0) {
+      if (areCheckboxesValid()) {
+        handleFormSubmit(e, requestForm, widgetId);
+      }
+    } else {
       handleFormSubmit(e, requestForm, widgetId);
     }
   });
-
-  // Checkbox validation
-  const checkboxes = requestForm.querySelectorAll('#form-checkboxes input[type="checkbox"]');
 
   function areCheckboxesValid() {
     const checkedCount = Array.from(checkboxes).filter((cb) => cb.checked).length;
@@ -104,11 +110,13 @@ function createFormSubmissions() {
     return true;
   }
 
-  checkboxes.forEach((checkbox) => {
-    checkbox.addEventListener('change', () => {
-      checkboxes[0].setCustomValidity('');
+  if (checkboxes.length > 0) {
+    checkboxes.forEach((checkbox) => {
+      checkbox.addEventListener('change', () => {
+        checkboxes[0].setCustomValidity('');
+      });
     });
-  });
+  }
 }
 
 export function waitForHcaptchaAndRun() {

@@ -15,6 +15,7 @@ const ENTRY_POINTS = [
   'src/projects/index.js',
   'src/contact/index.js',
   'src/about/index.js',
+  'src/packaging-detail/index.js',
 ];
 
 // Config dev serving
