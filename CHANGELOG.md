@@ -1,5 +1,11 @@
 # @maray-ai/wise-merchant
 
+## 0.2.4
+
+### Patch Changes
+
+- 994a086: Minor fix
+
 ## 0.2.3
 
 ### Patch Changes
