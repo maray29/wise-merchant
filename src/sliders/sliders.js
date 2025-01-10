@@ -280,6 +280,7 @@ export function createPackagingSlider() {
     grabCursor: true,
     // centeredSlides: true,
     speed: 500,
+    watchOverflow: true,
     a11y: {
       prevSlideMessage: 'Previous slide',
       nextSlideMessage: 'Next slide',
