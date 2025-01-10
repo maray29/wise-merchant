@@ -1,13 +1,14 @@
 import {
   animateFAQ,
   animateHeaderHeading,
-  animateIconDivider,
   animateNav,
   animateProcessTabs,
 } from '$animation/animation.js';
 import { waitForHcaptchaAndRun } from '$form/form.js';
 import {
   createLogoSlider,
+  createPackagingSlider,
+  createProjectImgsSlider,
   createProjectsSlider,
   createTestimonialsSlider,
 } from '$sliders/sliders.js';
@@ -22,10 +23,11 @@ window.addEventListener('DOMContentLoaded', () => {
   animateNav();
   animateHeaderHeading();
   createProjectsSlider();
+  createProjectImgsSlider();
   createTestimonialsSlider();
   createLogoSlider();
   animateProcessTabs();
   animateFAQ();
   waitForHcaptchaAndRun();
-  animateIconDivider();
+  createPackagingSlider();
 });

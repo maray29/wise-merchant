@@ -93,6 +93,8 @@ export function createTestimonialsSlider() {
 export function createProjectImgsSlider() {
   const sliderWraps = document.querySelectorAll('.project-imgs_list-wrap.swiper');
 
+  if (!sliderWraps) return;
+
   sliderWraps.forEach((sliderWrap) => {
     const prevEl = sliderWrap.querySelector("[data-element='swiper-prev']");
     const nextEl = sliderWrap.querySelector("[data-element='swiper-next']");
