@@ -1,5 +1,11 @@
 # @maray-ai/wise-merchant
 
+## 0.4.0
+
+### Minor Changes
+
+- 164739b: adjusted design page code
+
 ## 0.3.0
 
 ### Minor Changes
