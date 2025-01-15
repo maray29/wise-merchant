@@ -1,5 +1,11 @@
 # @maray-ai/wise-merchant
 
+## 0.4.1
+
+### Patch Changes
+
+- 6da9291: fix slider buttons
+
 ## 0.4.0
 
 ### Minor Changes
