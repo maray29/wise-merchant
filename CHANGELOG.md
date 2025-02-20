@@ -1,5 +1,11 @@
 # @maray-ai/wise-merchant
 
+## 0.4.3
+
+### Patch Changes
+
+- 6ca1e29: contact page bug fix
+
 ## 0.4.2
 
 ### Patch Changes
