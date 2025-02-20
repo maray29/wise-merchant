@@ -1,5 +1,11 @@
 # @maray-ai/wise-merchant
 
+## 0.4.2
+
+### Patch Changes
+
+- e10d4ce: added new category page
+
 ## 0.4.1
 
 ### Patch Changes
