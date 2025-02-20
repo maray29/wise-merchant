@@ -13,6 +13,7 @@ function groupPackagingItems() {
   // Group items by their packaging types
   packagingItems.forEach((item) => {
     const typeElements = item.querySelectorAll('[data-element="packaging-type"]');
+    console.log(typeElements);
 
     // Clone the item for each type it belongs to
     typeElements.forEach((typeElement) => {
@@ -58,6 +59,7 @@ function groupPackagingItems() {
   // Insert the container at the appropriate position
   const firstItem = document.querySelector('[data-element="packaging-item"]');
   if (firstItem) {
+    console.log('first item');
     firstItem.parentNode.insertBefore(container, firstItem);
   }
 
